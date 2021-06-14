@@ -20,18 +20,26 @@ float Ponto::getZ()
     return z;
 }
 
+float* Ponto::getCoord()
+{
+    return coord;
+}
+
 void Ponto::setX(float x)
 {
+    coord[0] = x;
     this->x = x;
 }
 
 void Ponto::setY(float y)
 {
+    coord[1] = y;
     this->y = y;
 }
 
 void Ponto::setZ(float z)
 {
+    coord[2] = z;
     this->z = z;
 }
 

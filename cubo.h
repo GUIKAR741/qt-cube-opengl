@@ -3,6 +3,7 @@
 
 #include "ponto.h"
 #include <QColor>
+#include <QDebug>
 #include <GL/gl.h>
 
 class Cubo

@@ -8,15 +8,16 @@ Canvas::Canvas(QWidget *parent): QOpenGLWidget(parent)
 
 void Canvas::idleGL()
 {
-    update();
+//    update();
 }
 
 void Canvas::initializeGL()
 {
     glClearColor(1,1,1,1);
+    glEnable(GL_DEPTH_TEST);
+    glEnable(GL_CULL_FACE);
     glEnable(GL_PROGRAM_POINT_SIZE);
     glEnable(GL_POINT_SMOOTH);
-    glEnable(GL_DEPTH_TEST);
 }
 
 void Canvas::paintGL()
